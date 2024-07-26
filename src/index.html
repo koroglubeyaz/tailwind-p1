@@ -23,9 +23,18 @@
 
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="font-open">
+
+  <body class="font-open dark">
+    <!-- Dark/Light Mode -->
+    <div class="absolute top-5 left-5 cursor-pointer text-lg">
+      <i class="fa-solid fa-sun text-white" id="sun"></i>
+      <i class="fa-solid fa-moon text-white hidden" id="moon"></i>
+    </div>
+
     <!-- Header Section -->
-    <header class="bg-black text-gega-grey uppercase py-6 lg:py-12">
+    <header
+      class="dark:bg-black bg-white dark:text-gega-grey text-black uppercase py-6 lg:py-12"
+    >
       <!-- HeaderContainer -->
       <div
         class="container flex items-center justify-between space-x-8 lg:space-x-16"
@@ -870,5 +879,8 @@
         </div>
       </div>
     </footer>
+
+    <!--Scripts-->
+    <script src="./js/script.js"></script>
   </body>
 </html>
